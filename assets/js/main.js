@@ -22,11 +22,11 @@ const obtenerGif = async function (url) {
 
 const obtenerTranding = async () => {
   const Trending = await await obtenerGif(url);
-
+  divParent = document.getElementById('gifs');
   Trending.map((item) => {
-    const muestra = `<div class="col">
+    const muestra = ` 
     <div class="card shadow-sm">
-      <img src="${item.url}"
+      <img src="${item.webp}" alt="cosa"/>
       <div class="card-body">
         <p class="card-text">${item.title}</p>
         <div class="d-flex justify-content-between align-items-center">
@@ -35,9 +35,9 @@ const obtenerTranding = async () => {
         </div>
       </div>
     </div>
-  </div>`;
+   `;
 
-    divParent = document.getElementById('gifs');
+    
     divParent.innerHTML = `<div class="col"> <p>${muestra}</p></div>`;
   });
 
