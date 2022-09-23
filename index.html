@@ -22,7 +22,7 @@
           <a href="#" class="navbar-brand d-flex align-items-center">
             <strong>Los Gifs más Chulos</strong>
           </a>
-          <p class="bd-navbar">v1.0 By Rafas</p>
+          <p class="bd-navbar">v1.0 By Rafa Ramos</p>
         </div>
       </div>
     </header>
@@ -32,21 +32,28 @@
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Busqueda de Gif</h1>
-            <form>
+            
               <input
                 class="form-control form-control-lg"
                 type="text"
-                placeholder="Ingrese nombre de GIF que requiere"
                 aria-label=".form-control-lg example"
                 id="termino"
+                list="preferencias"
               />
 
-              <p>
+              <datalist id="preferencias"> 
+                <option>Seleccione</option>
+                 
+              </datalist>
+
+             
+             
+               
                 <button type="button" class="btn btn-info" id="btn_busqueda">
                   Buscar
                 </button>
-              </p>
-            </form>
+             
+             
             <h1 id="title_view" class="display-4 fw-bold">
               Los GIFs más Populares
             </h1>

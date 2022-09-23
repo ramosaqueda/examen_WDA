@@ -1,7 +1,6 @@
 import { obtenerTranding } from './main.js';
 
 const inViewPort = ([e]) => {
-  console.log(e);
   const { isIntersecting, target } = e;
   if (isIntersecting) {
     obtenerTranding();
